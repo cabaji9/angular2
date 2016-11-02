@@ -1,0 +1,9 @@
+<ul>
+   <li *ngFor="let race of races">
+     <h2>{{race.name}}</h2>
+     <p (click)="called()">{{race.date}}</p>
+     <p>{{race.about}}</p>
+     <input [value]="race.entryFee"/>
+        <input type="text" [(ngModel)]="race.entryFee"/>
+   </li>
+ </ul>
